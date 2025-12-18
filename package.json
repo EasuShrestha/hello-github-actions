@@ -1,0 +1,8 @@
+{
+  "name": "hello-github-actions",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  }
+}
