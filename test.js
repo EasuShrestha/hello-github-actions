@@ -1,4 +1,4 @@
-test.js
+
 
 if (1 + 1 === 2) {
   console.log("Test passed ✅");
