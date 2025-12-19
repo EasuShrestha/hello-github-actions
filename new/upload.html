@@ -1,0 +1,21 @@
+Lab 6 - g) File upload code of php
+Jiwan Khadka
+•
+Yesterday (Edited 8:42 AM)
+<?php
+if(isset($_FILES["myfile"]))
+{
+    $fileName = $_FILES["myfile"]["name"];
+    $tmpName = $_FILES["myfile"]["tmp_name"];
+
+    $target = "uploads/" . basename($fileName);
+
+    if (move_uploaded_file($tmpName, $target)) {
+        echo "File Uploaded Successfully!";
+    }
+    else
+    {
+        echo "Error uploading file.";
+    }
+}
+?>
